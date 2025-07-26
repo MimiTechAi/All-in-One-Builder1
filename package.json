@@ -1,0 +1,31 @@
+{
+  "name": "all-in-one-builder1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@prisma/client": "latest",
+    "@trpc/server": "latest",
+    "@trpc/client": "latest",
+    "next-auth": "latest",
+    "zustand": "latest",
+    "tailwindcss": "latest",
+    "shadcn-ui": "latest",
+    "openai": "latest",
+    "axios": "latest"
+  },
+  "devDependencies": {
+    "typescript": "5.2.2",
+    "eslint": "8.56.0",
+    "prettier": "2.8.8",
+    "prisma": "latest"
+  }
+}
