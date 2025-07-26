@@ -1,0 +1,36 @@
+Project: All-In-One Natural Language Web App Builder
+
+Frontend:
+- Framework: Next.js 14 (App Router)
+- Styling: TailwindCSS + shadcn/ui
+- State: Zustand
+- Auth-Flow: NextAuth Google & GitHub
+- Eingabe: Text- und Spracheingabe-Feld
+
+UX:
+- Clean Dashboard mit "Prompt-to-App" Interface
+- Live-Komponenten-Preview
+- Seitenverwaltung (CRUD)
+- Deployment-Button
+
+Backend:
+- API via tRPC (type-safe)
+- Prompt Engine: OpenAI GPT-4 oder Local LLM (API-konform)
+- Prisma mit PostgreSQL
+- Projekt-Datenmodell: User → Project → Page → Component
+
+Datenbankmodell:
+- User: id, email, authProvider, createdAt
+- Project: id, userId, title, description, createdAt
+- Page: id, projectId, slug, html, css, meta, createdAt
+- Component: id, pageId, type, props, order
+
+Security:
+- Auth-Token per JWT
+- DB-Zugriffe nur bei Session mit User-ID
+- Optional Rate-Limiting
+
+Deployment:
+- Vercel-kompatibel
+- Optional Dockerfile
+- API-/Build-Logs über Dashboard abrufbar
